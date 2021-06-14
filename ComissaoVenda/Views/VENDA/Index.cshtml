@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ComissaoVenda.Models.VND002_VENDA>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.VEI004_MODELO_VERSAO.IdeModeloVersao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VND001_VENDEDOR.NmeVendedor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VlrPrecoVenda)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StaValeCombustivel)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.VEI004_MODELO_VERSAO.IdeModeloVersao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VND001_VENDEDOR.NmeVendedor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VlrPrecoVenda)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StaValeCombustivel)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdeVenda }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdeVenda }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdeVenda })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ComissaoVenda.Models.RELATORIO>
+@{ var data = Model.AsEnumerable();}
+@{
+    ViewBag.Title = "Relatório Valor Acumulado";
+}
+
+    <h2 class="text-center">Relatório Valor Acumulado</h2>
+    <br />
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NmeVendedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QtdVendas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QtdValeCombustivel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VlrTotalVendas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VlrTotalComissao)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="text-left">
+                    @Html.DisplayFor(modelItem => item.NmeVendedor)
+                </td>
+                <td class="text-center">
+                    @Html.DisplayFor(modelItem => item.QtdVendas)
+                </td>
+                <td class="text-center">
+                    @Html.DisplayFor(modelItem => item.QtdValeCombustivel)
+                </td>
+                <td class="text-left">
+                    @Html.DisplayFor(modelItem => item.VlrTotalVendas)
+                </td>
+                <td class="text-left">
+                    @Html.DisplayFor(modelItem => item.VlrTotalComissao)
+
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr style="color:black;font-weight: bold;">
+            <td>Total Geral</td>
+            <td class="text-center">@data.Sum(i=>i.QtdVendas)</td>
+            <td class="text-center">@data.Sum(i=>i.QtdValeCombustivel)</td>
+            <td>@data.Sum(i=>i.VlrTotalVendas).ToString("C")</td>
+            <td>@data.Sum(i => i.VlrTotalComissao).ToString("C")</td>
+        </tr>
+    </tfoot>
+</table>
+
+

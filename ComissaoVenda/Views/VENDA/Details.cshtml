@@ -1,0 +1,50 @@
+﻿@model ComissaoVenda.Models.VND002_VENDA
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VND002_VENDA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VEI004_MODELO_VERSAO.IdeModeloVersao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VEI004_MODELO_VERSAO.IdeModeloVersao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VND001_VENDEDOR.NmeVendedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VND001_VENDEDOR.NmeVendedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VlrPrecoVenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VlrPrecoVenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StaValeCombustivel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StaValeCombustivel)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdeVenda }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,56 @@
+﻿@model ComissaoVenda.Models.VND002_VENDA
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>VND002_VENDA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VEI004_MODELO_VERSAO.IdeModeloVersao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VEI004_MODELO_VERSAO.IdeModeloVersao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VND001_VENDEDOR.NmeVendedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VND001_VENDEDOR.NmeVendedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VlrPrecoVenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VlrPrecoVenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StaValeCombustivel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StaValeCombustivel)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
