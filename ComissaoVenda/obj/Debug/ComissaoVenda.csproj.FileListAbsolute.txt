@@ -81,3 +81,16 @@ C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEA
 C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\EntityFramework.xml
 C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\EntityFramework.SqlServer.xml
 C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\obj\Debug\ComissaoVenda.csprojAssemblyReference.cache
+C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\Ninject.dll
+C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\Ninject.Web.Common.dll
+C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\Ninject.xml
+C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\Ninject.Web.Common.xml
+C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\Unity.Abstractions.dll
+C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\Unity.Container.dll
+C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\Unity.Abstractions.pdb
+C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\Unity.Container.pdb
+C:\Users\minha\OneDrive\Documentos\Visual Studio 2019\Projetos\ComissaoVenda-GEAP\ComissaoVenda\bin\Unity.Mvc5.dll
